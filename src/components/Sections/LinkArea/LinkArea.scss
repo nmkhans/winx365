@@ -1,0 +1,31 @@
+.link__content {
+    border: 1px solid gray;
+    margin-top: 20px;
+
+    .link__content__header {
+        border-bottom: 1px solid gray;
+        padding: 10px;
+        background: linear-gradient(180deg, green 0%, #07B902 100%);
+        color: #fff;
+    }
+
+    .link__content__body {
+        background-color: #C1FFBF;
+        padding: 10px;
+        font-weight: 500;
+
+        .link__list {
+            background: #000;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            text-align: center;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+            }
+        }
+    }
+}
