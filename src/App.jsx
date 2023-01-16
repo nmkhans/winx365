@@ -5,6 +5,7 @@ import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home/Home';
 import Merquee from './components/Merquee/Merquee';
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-      {/* footer */}
+      <Footer />
     </>
   )
 }
