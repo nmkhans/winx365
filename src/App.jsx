@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom"
 import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home/Home';
+import Merquee from './components/Merquee/Merquee';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <>
       <Banner />
       <Navbar />
+      <Merquee />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
