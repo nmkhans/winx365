@@ -1,0 +1,30 @@
+.rules__content {
+    border: 1px solid gray;
+    margin-top: 20px;
+
+    .rules__header {
+        border-bottom: 1px solid gray;
+        padding: 10px;
+        background: linear-gradient(180deg, green 0%, #07B902 100%);
+        color: #fff;
+    }
+
+    .rules__body {
+        background-color: #C1FFBF;
+        padding: 10px;
+        font-weight: 500;
+
+        ul {
+            list-style: none;
+        }
+
+        .rules__box {
+            width: 85%;
+            background: #fff;
+            border: 3px solid red;
+            padding: 10px;
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+    }
+}

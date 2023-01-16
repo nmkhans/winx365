@@ -4,6 +4,7 @@ import AgentInfo from '../../components/Sections/AgentInfo/AgentInfo';
 import AgentRules from '../../components/Sections/AgentsRules/AgentRules';
 import AgentType from '../../components/Sections/AgentType/AgentType';
 import PointBuy from '../../components/Sections/PointBuy/PointBuy';
+import Rules from '../../components/Sections/Rules/Rules';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
            <AgentType />
            <AgentRules />
            <PointBuy />
+           <Rules />
         </>
     );
 };
