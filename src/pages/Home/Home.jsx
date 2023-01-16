@@ -5,6 +5,7 @@ import AgentRules from '../../components/Sections/AgentsRules/AgentRules';
 import AgentType from '../../components/Sections/AgentType/AgentType';
 import LinkArea from '../../components/Sections/LinkArea/LinkArea';
 import PointBuy from '../../components/Sections/PointBuy/PointBuy';
+import RuleFeature from '../../components/Sections/RuleFeature/RuleFeature';
 import Rules from '../../components/Sections/Rules/Rules';
 import SocialArea from '../../components/Sections/SocialArea/SocialArea';
 
@@ -19,6 +20,7 @@ const Home = () => {
            <Rules />
            <LinkArea />
            <SocialArea />
+           <RuleFeature />
         </>
     );
 };
