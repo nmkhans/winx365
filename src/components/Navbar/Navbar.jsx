@@ -12,19 +12,19 @@ const Navbar = () => {
                             <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <Link to="/">Customar Service</Link>
+                            <Link to="/customar-service">Customar Service</Link>
                         </li>
                         <li>
-                            <Link to="/">Admin</Link>
+                            <Link to="/admin">Admin</Link>
                         </li>
                         <li>
-                            <Link to="/">Sub Admin</Link>
+                            <Link to="/sub-admin">Sub Admin</Link>
                         </li>
                         <li>
-                            <Link to="/">Super Admin</Link>
+                            <Link to="/super-admin">Super Admin</Link>
                         </li>
                         <li>
-                            <Link to="/">Master Agent</Link>
+                            <Link to="/master-agent">Master Agent</Link>
                         </li>
                     </ul>
                 </div>
