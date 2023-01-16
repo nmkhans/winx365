@@ -1,0 +1,21 @@
+.agentRules__content {
+    border: 1px solid gray;
+    margin-top: 20px;
+
+    .agentRules__header {
+        border-bottom: 1px solid gray;
+        padding: 10px;
+        background: linear-gradient(180deg, green 0%, #07B902 100%);
+        color: #fff;
+    }
+
+    .agentRules__body {
+        background-color: #C1FFBF;
+        padding: 10px;
+        font-weight: 500;
+
+        ul {
+            list-style: none;
+        }
+    }
+}
