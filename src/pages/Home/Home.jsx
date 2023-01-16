@@ -6,6 +6,7 @@ import AgentType from '../../components/Sections/AgentType/AgentType';
 import LinkArea from '../../components/Sections/LinkArea/LinkArea';
 import PointBuy from '../../components/Sections/PointBuy/PointBuy';
 import Rules from '../../components/Sections/Rules/Rules';
+import SocialArea from '../../components/Sections/SocialArea/SocialArea';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
            <PointBuy />
            <Rules />
            <LinkArea />
+           <SocialArea />
         </>
     );
 };
