@@ -1,9 +1,9 @@
 import React from 'react'
-import { RouterProvider } from 'react-router-dom'
 import './App.css'
+import { Routes, Route } from "react-router-dom"
 import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
-import { router } from './routes/routes';
+import Home from './pages/Home/Home';
 
 function App() {
 
@@ -11,8 +11,9 @@ function App() {
     <>
       <Banner />
       <Navbar />
-      {/* routes */}
-      <RouterProvider router={router} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
       {/* footer */}
     </>
   )
