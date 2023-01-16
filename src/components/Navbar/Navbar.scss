@@ -1,0 +1,26 @@
+.navbar__content {
+    background: linear-gradient(to bottom, #41F95D, #00B81C);
+    padding: 15px 10px;
+    margin-top: 5px;
+
+    ul {
+        li {
+            display: inline-block;
+            margin-left: -5px;
+
+            a {
+                text-decoration: none;
+                padding: 10px 20px;
+                color: #000;
+                font-weight: 600;
+                transition: .4s;
+                border-radius: 10px;
+
+                &:hover {
+                    background: #000;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
