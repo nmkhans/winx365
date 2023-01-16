@@ -1,0 +1,32 @@
+.agentType__content {
+    border: 1px solid gray;
+    margin-top: 20px;
+
+    .agentType__header {
+        border-bottom: 1px solid gray;
+        padding: 10px;
+        background: linear-gradient(180deg, green 0%, #07B902 100%);
+        color: #fff;
+    }
+
+    .agentType__body {
+        background-color: #C1FFBF;
+        padding: 10px;
+        font-weight: 500;
+
+        .agent__types {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 10px;
+            }
+
+            p {
+                span {
+                    color: #0000ff;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
