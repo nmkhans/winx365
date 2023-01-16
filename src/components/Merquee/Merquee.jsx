@@ -7,7 +7,7 @@ const Merquee = () => {
         <div className="Marquee">
             <div className="container">
                 <div className="marquee__content">
-                    <Marquee gradient={false}>
+                    <Marquee speed={30} gradient={false}>
                         Full premium Site For Casino Lovers www.winx365.info এ যারা এজেন্ট নিয়ে কাজ করতে চান তারা এডমিন অথবা সুপার এজেন্টদের সাথে যোগাযোগ করুন।
                     </Marquee>
                 </div>

@@ -1,0 +1,21 @@
+.accountInfo__content {
+    border: 1px solid gray;
+    margin-top: 20px;
+
+    .accountInfo__header {
+        border-bottom: 1px solid gray;
+        padding: 10px;
+        background-color: #2005a5;
+        color: #fff;
+    }
+
+    .accountInfo__body {
+        background-color: #C1FFBF;
+        padding: 10px;
+        font-weight: 500;
+
+        ul {
+            list-style: none;
+        }
+    }
+}
