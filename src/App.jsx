@@ -7,7 +7,6 @@ function App() {
     <>
       {/* Header */}
       {/* routes */}
-      my react app
       {/* footer */}
     </>
   )
