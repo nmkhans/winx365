@@ -4,13 +4,13 @@ import "./Banner.scss";
 
 const Banner = () => {
     return (
-        <div className="Banner">
+        <section className="Banner">
             <div className="container banner__content">
                 <div className="banner__image">
                     <img src={banner} alt="Banner Image" />
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
