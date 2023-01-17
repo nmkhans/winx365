@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, useLocation } from "react-router-dom"
 import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home/Home';
@@ -11,16 +11,26 @@ import SubAdmin from './pages/SubAdmin/SubAdmin';
 import SuperAdmin from './pages/SuperAdmin/SuperAdmin';
 import MasterAgent from './pages/MasterAgent/MasterAgent';
 import CustomarService from './pages/CustomarService/CustomarService';
+import Login from './pages/Login/Login';
 
 function App() {
+  const location = useLocation();
+  const [render, setRender] = useState(true);
+
+  useEffect(() => {
+    if(location.pathname === "/login") {
+      setRender(false)
+    }
+  }, [location.pathname])
 
   return (
     <>
       <Banner />
-      <Navbar />
-      <Merquee />
+      {render && <Navbar />}
+      {render && <Merquee />}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/customar-service" element={<CustomarService />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/sub-admin" element={<SubAdmin />} />
