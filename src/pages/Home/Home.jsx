@@ -10,6 +10,7 @@ import Rules from '../../components/Sections/Rules/Rules';
 import SocialArea from '../../components/Sections/SocialArea/SocialArea';
 
 const Home = () => {
+    
     return (
         <>
            <AccountInfo />
