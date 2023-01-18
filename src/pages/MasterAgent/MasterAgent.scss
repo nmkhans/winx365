@@ -1,0 +1,18 @@
+.admin__area {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+
+    button {
+        display: inline-block;
+        border: none;
+        outline: none;
+        background-color: #5cb85c;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
