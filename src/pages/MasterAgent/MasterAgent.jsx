@@ -12,9 +12,7 @@ const MasterAgent = () => {
     const { data, isLoading } = useGetAgentsQuery(query);
     const users = data?.data[0]?.data;
 
-    if (isLoading) {
-        return <Loading />
-    }
+    if (isLoading) return <Loading />
 
     return (
         <section className="MasterAgent">

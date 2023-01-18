@@ -5,8 +5,15 @@ export const api = createApi({
     baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5000/api/v1" }),
     tagTypes: ["agents"],
     endpoints: (builder) => ({
+        loginUser: builder.mutation({
+            query: (data) => ({
+                url: `/login-user`,
+                method: "POST",
+                body: data
+            })
+        }),
         getAgents: builder.query({
-            query: ({role, pageno, perpage}) => ({
+            query: ({ role, pageno, perpage }) => ({
                 url: `/get-agents?role=${role}&pageno=${pageno}&perpage=${perpage}`,
                 method: "GET"
             })
@@ -15,5 +22,6 @@ export const api = createApi({
 })
 
 export const {
-   useGetAgentsQuery,
+    useLoginUserMutation,
+    useGetAgentsQuery,
 } = api;

@@ -1,0 +1,34 @@
+.Login {
+    margin: 30px 0;
+}
+
+.login__content {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 30px;
+
+    .login__header {
+        text-align: center;
+        font-size: 23px;
+        font-weight: 500;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .input__group {
+        margin-bottom: 10px;
+
+        input {
+            width: 100%;
+            padding: 10px 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background: #5cb85c;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}

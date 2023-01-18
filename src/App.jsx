@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
-import { Routes, Route, useLocation } from "react-router-dom"
+import { Routes, Route, useLocation } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home/Home';
@@ -18,7 +19,7 @@ function App() {
   const [render, setRender] = useState(true);
 
   useEffect(() => {
-    if(location.pathname === "/login") {
+    if (location.pathname === "/login") {
       setRender(false)
     }
   }, [location.pathname])
@@ -37,6 +38,7 @@ function App() {
         <Route path="/super-admin" element={<SuperAdmin />} />
         <Route path="/master-agent" element={<MasterAgent />} />
       </Routes>
+      <Toaster />
       <Footer />
     </>
   )
