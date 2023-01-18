@@ -18,7 +18,8 @@ const Login = () => {
         if (result?.data?.success) {
             localStorage.setItem("admin", JSON.stringify(result?.data?.data))
             toast.success(result.data.message)
-            navigate("/")
+            navigate("/");
+            window.location.reload();
         }
     }
 

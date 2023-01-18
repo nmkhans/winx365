@@ -3,6 +3,13 @@ import "./Navbar.scss";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+    const user = JSON.parse(localStorage.getItem("admin"));
+
+    const handleLogout = () => {
+        localStorage.removeItem("admin")
+        window.location.reload()
+    }
+
     return (
         <nav className="Navbar">
             <div className="container">
@@ -26,6 +33,11 @@ const Navbar = () => {
                         <li>
                             <Link to="/master-agent">Master Agent</Link>
                         </li>
+                        {user?.role === "admin" && (
+                            <li>
+                                <button onClick={handleLogout}>log out</button>
+                            </li>
+                        )}
                     </ul>
                 </div>
             </div>

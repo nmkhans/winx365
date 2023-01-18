@@ -14,8 +14,7 @@ const MasterAgent = () => {
     })
     const { data, isLoading } = useGetAgentsQuery(query);
     const users = data?.data[0]?.data;
-    const admin = JSON.parse(localStorage?.getItem("admin"))
-    console.log(users)
+    const user = JSON.parse(localStorage?.getItem("admin"))
 
     if (isLoading) return <Loading />
 
@@ -25,7 +24,7 @@ const MasterAgent = () => {
                 <div className="table__content">
                     <UserTable users={users} />
                 </div>
-                {admin.role === "admin" && (
+                {user?.role === "admin" && (
                     <div className="admin__area">
                         <button onClick={() => setModal(true)}>Add agent</button>
                         <div className="admin__modal">
