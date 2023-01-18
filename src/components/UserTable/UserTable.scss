@@ -17,7 +17,7 @@
 
     .table__body {
         border-top: 1px solid #ddd;
-        
+
         td {
             padding: 15px 5px;
         }
@@ -26,4 +26,15 @@
             background-color: #f9f9f9
         }
     }
+}
+
+.btn {
+    border: none;
+    outline: none;
+    display: inline-block;
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
 }

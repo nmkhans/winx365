@@ -1,7 +1,7 @@
 import React from 'react';
 
 const UserRow = ({ user, index }) => {
-    console.log(user)
+    
     return (
         <tr className="table__body">
             <td>{index + 1}</td>
@@ -9,6 +9,7 @@ const UserRow = ({ user, index }) => {
             <td>{user.name}</td>
             <td>{user.whatsappUrl}</td>
             <td>0{user.phone}</td>
+            <td><button className="btn">complain</button></td>
         </tr>
     );
 };
