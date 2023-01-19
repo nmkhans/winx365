@@ -18,19 +18,21 @@ const CustomarService = () => {
     if (isLoading) return <Loading />
 
     return (
-        <div className="container">
-            <div className="table__content">
-                <UserTable users={users} />
-            </div>
-            {user?.role === "admin" && (
-                <div className="admin__area">
-                    <button onClick={() => setModal(true)}>Add agent</button>
-                    <div className="admin__modal">
-                        {modal && <Modal setModal={setModal} />}
-                    </div>
+        <section className="CustomarService">
+            <div className="container">
+                <div className="table__content">
+                    <UserTable users={users} />
                 </div>
-            )}
-        </div>
+                {user?.role === "admin" && (
+                    <div className="admin__area">
+                        <button onClick={() => setModal(true)}>Add agent</button>
+                        <div className="admin__modal">
+                            {modal && <Modal setModal={setModal} />}
+                        </div>
+                    </div>
+                )}
+            </div>
+        </section>
     );
 };
 

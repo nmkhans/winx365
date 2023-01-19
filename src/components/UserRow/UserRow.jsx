@@ -24,13 +24,13 @@ const UserRow = ({ user, index }) => {
             <td>{user.role}</td>
             <td>{user.name}</td>
             <td>
-                <span style={{ color: "#195a9a", fontSize: "25px", marginRight: "5px" }}>
+                <span className="table__icon">
                     <BsFacebook />
                 </span>
-                <span style={{ color: "#009df2", fontSize: "25px", marginRight: "5px" }}>
+                <span className="table__icon">
                     <BsMessenger />
                 </span>
-                <span onClick={handleRedirect} style={{ color: "#3fbb4f", fontSize: "25px" }}>
+                <span onClick={handleRedirect} className="table__icon">
                     <BsWhatsapp />
                 </span>
             </td>
