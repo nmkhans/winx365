@@ -79,11 +79,17 @@
 
             .table__icon {
                 font-size: 12px !important;
+                padding: 0 3px !important;
             }
         }
     }
 
     .btn {
-       font-size: 11px;
+        font-size: 10px;
+    }
+
+    .deletebtn {
+        font-size: 10px;
+        margin-top: 3px;
     }
 }

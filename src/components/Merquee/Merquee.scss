@@ -5,3 +5,9 @@
     color: #fff;
     font-weight: 500;
 }
+
+@media all and (min-width: 200px) and (max-width: 768px) {
+    .marquee__content {
+        font-size: 12px;
+    }
+}
