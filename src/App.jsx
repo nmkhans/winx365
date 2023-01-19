@@ -13,13 +13,14 @@ import SuperAgent from './pages/SuperAgent/SuperAgent';
 import MasterAgent from './pages/MasterAgent/MasterAgent';
 import CustomarService from './pages/CustomarService/CustomarService';
 import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
 
 function App() {
   const location = useLocation();
   const [render, setRender] = useState(true);
 
   useEffect(() => {
-    if (location.pathname === "/login") {
+    if ((location.pathname === "/login") || (location.pathname === "/register")) {
       setRender(false)
     }
   }, [location.pathname])
@@ -32,6 +33,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/customar-service" element={<CustomarService />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/sub-admin" element={<SubAdmin />} />
