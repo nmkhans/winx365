@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLoginUserMutation } from '../../redux/api/api';
 import "./Login.scss";
-import toast from 'react-hot-toast';
+import {toast} from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
@@ -17,9 +17,11 @@ const Login = () => {
         const result = await loginUser(data);
         if (result?.data?.success) {
             localStorage.setItem("admin", JSON.stringify(result?.data?.data))
-            toast.success(result.data.message)
             navigate("/");
             window.location.reload();
+            toast.success(result.data.message)
+        } else {
+            toast.error(result.error.data.message)
         }
     }
 
