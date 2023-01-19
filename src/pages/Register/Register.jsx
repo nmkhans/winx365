@@ -1,11 +1,11 @@
 import React from 'react';
 import "./Register.scss";
-import { useLoginUserMutation } from '../../redux/api/api';
+import { useRegisterUserMutation } from '../../redux/api/api';
 import {toast} from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
-    const [loginUser] = useLoginUserMutation()
+    const [registerUser] = useRegisterUserMutation()
     const navigate = useNavigate()
 
     const handleSubmit = async (event) => {
@@ -14,16 +14,14 @@ const Register = () => {
         const email = event.target.email.value;
         const password = event.target.password.value;
         const data = { name, email, password }
-        console.log(data)
-        // const result = await loginUser(data);
-        // if (result?.data?.success) {
-        //     localStorage.setItem("admin", JSON.stringify(result?.data?.data))
-        //     navigate("/");
-        //     window.location.reload();
-        //     toast.success(result.data.message)
-        // } else {
-        //     toast.error(result.error.data.message)
-        // }
+        
+        const result = await registerUser(data);
+        if (result?.data?.success) {
+            navigate("/login");
+            toast.success(result.data.message)
+        } else {
+            toast.error(result.error.data.message)
+        }
     }
 
     return (

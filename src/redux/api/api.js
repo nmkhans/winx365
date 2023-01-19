@@ -12,6 +12,13 @@ export const api = createApi({
                 body: data
             })
         }),
+        registerUser: builder.mutation({
+            query: (data) => ({
+                url: "/register-user",
+                method: "POST",
+                body: data
+            }),
+        }),
         getAgents: builder.query({
             query: ({ role, pageno, perpage }) => ({
                 url: `/get-agents?role=${role}&pageno=${pageno}&perpage=${perpage}`,
@@ -39,7 +46,8 @@ export const api = createApi({
 
 export const {
     useLoginUserMutation,
+    useRegisterUserMutation,
     useGetAgentsQuery,
     useAddAgentMutation,
-    useDeleteAgentMutation
+    useDeleteAgentMutation,
 } = api;
