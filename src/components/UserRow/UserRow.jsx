@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDeleteAgentMutation } from '../../redux/api/api';
 import { BsFacebook, BsMessenger, BsWhatsapp } from "react-icons/bs";
+import { toast } from "react-hot-toast";
 
 const UserRow = ({ user, index }) => {
     const admin = JSON.parse(localStorage.getItem("admin"));
@@ -8,7 +9,9 @@ const UserRow = ({ user, index }) => {
 
     const handleDetete = async (id) => {
         const result = await deleteAgent(id);
-        console.log(result)
+        if (result.data.success) {
+            toast.success(result.data.message)
+        }
     }
 
     const handleRedirect = () => {
@@ -21,13 +24,13 @@ const UserRow = ({ user, index }) => {
             <td>{user.role}</td>
             <td>{user.name}</td>
             <td>
-                <span style={{color: "#195a9a", fontSize: "25px", marginRight: "5px"}}>
+                <span style={{ color: "#195a9a", fontSize: "25px", marginRight: "5px" }}>
                     <BsFacebook />
                 </span>
-                <span style={{color: "#009df2", fontSize: "25px", marginRight: "5px"}}>
+                <span style={{ color: "#009df2", fontSize: "25px", marginRight: "5px" }}>
                     <BsMessenger />
                 </span>
-                <span onClick={handleRedirect} style={{color: "#3fbb4f", fontSize: "25px"}}>
+                <span onClick={handleRedirect} style={{ color: "#3fbb4f", fontSize: "25px" }}>
                     <BsWhatsapp />
                 </span>
             </td>
