@@ -43,9 +43,6 @@ const Login = () => {
                             <input type="submit" value="submit" />
                         </div>
                     </form>
-                    <div className="register">
-                        <p onClick={() => navigate("/register")}>Register</p>
-                    </div>
                 </div>
             </div>
         </section>
