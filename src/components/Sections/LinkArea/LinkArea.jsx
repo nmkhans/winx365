@@ -12,15 +12,15 @@ const LinkArea = () => {
                     <div className="link__content__body">
                         <div className="link__list">
                             <h4>ইউজার লিংকঃ</h4>
-                            <a href="#">www.winx365.live</a>
+                            <a href="https://winx365.online">winx365.online</a>
                         </div>
                         <div className="link__list">
                             <h4>এজেন্ট লিংকঃ</h4>
-                            <a href="#">www.winx365.live</a>
+                            <a href="https://ag.winx365.live">ag.winx365.live</a>
                         </div>
                         <div className="link__list">
                             <h4>এজেন্ট লিস্ট লিংকঃ</h4>
-                            <a href="#">www.winx365.live</a>
+                            <a href="https://winx365.online">winx365.online</a>
                         </div>
                     </div>
                 </div>
