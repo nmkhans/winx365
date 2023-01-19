@@ -26,6 +26,13 @@ export const api = createApi({
                 body: data
             }),
             invalidatesTags: ["agent"]
+        }),
+        deleteAgent: builder.mutation({
+            query: (id) => ({
+                url: `/delete-agent/${id}`,
+                method: "DELETE"
+            }),
+            invalidatesTags: ["agent"]
         })
     })
 })
@@ -33,5 +40,6 @@ export const api = createApi({
 export const {
     useLoginUserMutation,
     useGetAgentsQuery,
-    useAddAgentMutation
+    useAddAgentMutation,
+    useDeleteAgentMutation
 } = api;

@@ -3,6 +3,8 @@ import UserRow from '../UserRow/UserRow';
 import "./UserTable.scss";
 
 const UserTable = ({ users }) => {
+   
+
     return (
         <table className="user__table">
             <thead>
@@ -13,6 +15,7 @@ const UserTable = ({ users }) => {
                     <th>social link</th>
                     <th>phone number</th>
                     <th>action</th>
+                    
                 </tr>
             </thead>
             <tbody>
