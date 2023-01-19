@@ -53,7 +53,7 @@ const Modal = ({ setModal }) => {
                                 <option value="admin">Admin</option>
                                 <option value="subadmin">Sub Admin</option>
                                 <option value="superagent">Super Agent</option>
-                                <option value="master">Master Agent</option>
+                                <option value="masteragent">Master Agent</option>
                             </select>
                         </div>
                         <div className="modal__input">

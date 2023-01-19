@@ -28,10 +28,10 @@ const Navbar = () => {
                             <Link to="/sub-admin">সাব এডমিন</Link>
                         </li>
                         <li>
-                            <Link to="/super-admin">সুপার এডমিন</Link>
+                            <Link to="/super-agent">সুপার এজেন্ট</Link>
                         </li>
                         <li>
-                            <Link to="/master-agent">মাস্টার এডমিন</Link>
+                            <Link to="/master-agent">মাস্টার এজেন্ট</Link>
                         </li>
                         {user?.role === "admin" && (
                             <li>

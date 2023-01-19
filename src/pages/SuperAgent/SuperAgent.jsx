@@ -7,7 +7,7 @@ import Modal from '../../components/Modal/Modal';
 const SuperAdmin = () => {
     const [modal, setModal] = useState(false);
     const [query, setQuery] = useState({
-        role: "superadmin",
+        role: "superagent",
         pageno: 1,
         perpage: 100
     })

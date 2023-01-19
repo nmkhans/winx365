@@ -8,7 +8,7 @@ import Modal from '../../components/Modal/Modal';
 const MasterAgent = () => {
     const [modal, setModal] = useState(false);
     const [query, setQuery] = useState({
-        role: "master",
+        role: "masteragent",
         pageno: 1,
         perpage: 100
     })

@@ -9,7 +9,7 @@ import Merquee from './components/Merquee/Merquee';
 import Footer from './components/Footer/Footer'
 import Admin from './pages/Admin/Admin';
 import SubAdmin from './pages/SubAdmin/SubAdmin';
-import SuperAdmin from './pages/SuperAdmin/SuperAdmin';
+import SuperAgent from './pages/SuperAgent/SuperAgent';
 import MasterAgent from './pages/MasterAgent/MasterAgent';
 import CustomarService from './pages/CustomarService/CustomarService';
 import Login from './pages/Login/Login';
@@ -35,7 +35,7 @@ function App() {
         <Route path="/customar-service" element={<CustomarService />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/sub-admin" element={<SubAdmin />} />
-        <Route path="/super-admin" element={<SuperAdmin />} />
+        <Route path="/super-agent" element={<SuperAgent />} />
         <Route path="/master-agent" element={<MasterAgent />} />
       </Routes>
       <Toaster />
