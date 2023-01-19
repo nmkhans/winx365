@@ -6,10 +6,21 @@
 }
 
 .container {
-  max-width: 790px;
+  width: 790px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
 img {
   max-width: 100%;
+}
+
+@media all and (min-width: 200px) and (max-width: 768px) {
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
 }

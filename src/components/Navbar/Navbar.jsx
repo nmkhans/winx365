@@ -16,22 +16,22 @@ const Navbar = () => {
                 <div className="navbar__content">
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/">হোম</Link>
                         </li>
                         <li>
-                            <Link to="/customar-service">Customar Service</Link>
+                            <Link to="/customar-service">কাস্টমার সার্ভিস</Link>
                         </li>
                         <li>
-                            <Link to="/admin">Admin</Link>
+                            <Link to="/admin">এডমিন</Link>
                         </li>
                         <li>
-                            <Link to="/sub-admin">Sub Admin</Link>
+                            <Link to="/sub-admin">সাব এডমিন</Link>
                         </li>
                         <li>
-                            <Link to="/super-admin">Super Admin</Link>
+                            <Link to="/super-admin">সুপার এডমিন</Link>
                         </li>
                         <li>
-                            <Link to="/master-agent">Master Agent</Link>
+                            <Link to="/master-agent">মাস্টার এডমিন</Link>
                         </li>
                         {user?.role === "admin" && (
                             <li>
