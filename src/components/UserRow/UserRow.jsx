@@ -35,7 +35,7 @@ const UserRow = ({ user, index }) => {
             <td>
                 <button className="btn">complain</button>
                 {
-                    admin.role === "admin" && (
+                    admin?.role === "admin" && (
                         <button onClick={() => handleDetete(user._id)} className="deletebtn">delete</button>
                     )
                 }
