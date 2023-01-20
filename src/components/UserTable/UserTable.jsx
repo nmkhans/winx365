@@ -4,7 +4,6 @@ import "./UserTable.scss";
 
 const UserTable = ({ users }) => {
    
-
     return (
         <table className="user__table">
             <thead>

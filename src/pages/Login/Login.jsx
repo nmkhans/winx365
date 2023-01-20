@@ -1,11 +1,11 @@
 import React from 'react';
 import { useLoginUserMutation } from '../../redux/api/api';
 import "./Login.scss";
-import {toast} from 'react-hot-toast';
+import { toast } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-    const [loginUser] = useLoginUserMutation()
+    const [loginUser, { isLoading }] = useLoginUserMutation()
     const navigate = useNavigate()
 
     const handleSubmit = async (event) => {
@@ -40,7 +40,7 @@ const Login = () => {
                             <input type="password" placeholder="Enter password" name="password" />
                         </div>
                         <div className="input__group">
-                            <input type="submit" value="submit" />
+                            <input type="submit" value={isLoading ? "Loading...": "Submit"} />
                         </div>
                     </form>
                 </div>

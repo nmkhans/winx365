@@ -5,7 +5,7 @@ import { toast } from "react-hot-toast";
 
 const UserRow = ({ user, index }) => {
     const admin = JSON.parse(localStorage.getItem("admin"));
-    const [deleteAgent] = useDeleteAgentMutation();
+    const [deleteAgent, { isLoading }] = useDeleteAgentMutation();
 
     const handleDetete = async (id) => {
         const result = await deleteAgent(id);
@@ -39,7 +39,9 @@ const UserRow = ({ user, index }) => {
                 <button className="btn">complain</button>
                 {
                     admin?.role === "admin" && (
-                        <button onClick={() => handleDetete(user._id)} className="deletebtn">delete</button>
+                        <button onClick={() => handleDetete(user._id)} className="deletebtn">{
+                            isLoading ? "Deleting..." : "Delete"
+                        }</button>
                     )
                 }
             </td>
