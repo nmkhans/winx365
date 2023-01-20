@@ -13,8 +13,9 @@ const Modal = ({ setModal }) => {
         const phone = event.target.phone.value;
         const whatsappUrl = event.target.whatsappUrl.value;
         const role = event.target.role.value;
-
-        const data = { name, email, phone, whatsappUrl, role }
+        const formatedUrl = (88 + whatsappUrl);
+        
+        const data = { name, email, phone, whatsappUrl: formatedUrl, role }
         const result = await addAgent(data)
         if (result?.data?.success) {
             toast.success(result.data.message)

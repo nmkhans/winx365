@@ -55,3 +55,28 @@
         }
     }
 }
+
+@media all and (min-width: 200px) and (max-width: 768px) {
+    .Modal {
+        width: 80%;
+        padding: 10px;
+
+        .modal__body {
+            padding: 10px;
+
+            .modal__close {
+                padding: 7px;
+            } 
+        }
+
+        .modal__input {
+            input {
+                width: 100%;
+            }
+
+            select {
+                width: 100%;
+            }
+        }
+    }
+}
